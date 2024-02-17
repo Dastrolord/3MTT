@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Homepage</title>
+        <meta name="viewport" content="width=device-width, initial-scale-1">
+        <link rel="stylesheet" href="sryle.css">
+        <script type="text/javascript" src="js/declarativeToggle.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/cycle2.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <span data-toggle-target=".sideNav" class="toggle-btn">MENU</span>
+                <nav class="sideNav">
+                    <ul class="group">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact Us  </a></li>
+                        <li><a href="#">FAQs  </a></li>
+                        <li><a href="#">Links  </a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="content-area group">
+                <div class="main-area">
+                    <h2>Slideshow</h2>
+                    <div class="cycle-slideshow" data-cycle-slides=".slide">
+                        <span class="cycle-prev">&laquo;</span>
+                        <span class="cycle-next">&raquo;</span>
+                        <span class="cycle-pager"></span>
+                        <div class="slide">
+                            <img src="images/cat.jpg" alt="Cute cat">
+                            <div class="slide-text">
+                                <h3>Cuteness overload</h3>
+                                <p>Cats are overloaded with cutness.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="images/luca-bravo-g130ZN38BZw-unsplash3.jpg" alt="night city">
+                            <div class="slide-text">
+                                <h3>Life in the big city at night</h3>
+                                <p>There is nothing better than taking a stroll in the metropolitan area at night.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="images/life-on-the-tracks.jpg" alt="Squirrel on the train track">
+                            <div class="slide-text">
+                                <h3>Harsh life of the Squirrel</h3>
+                                <p>Squirrels have to forage for food anywhere they can even in dangerous places like the train track.</p>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <h2>Image</h2>
+                    <div class="image-banner">
+                        <img src="images/life-on-the-tracks.jpg" alt="Squirrel on the train track">
+                        <div class="banner-description">
+                            <p>This is an image of a squirrel photographed on the train tracks taken in Oregon. This squirrel is incredibly brave and enjoyed playing on the tracks.</p>
+                        </div>
+                    </div>
+                <h2>Video</h2>
+                    <p> You can view the video below. Lorem</p>
+                    <video controls>
+                        <source src="Video/example.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <aside class="side-bar">
+                    
+                    <form>
+                        <h2>Sign-up for our newsletter</h2>
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="email" placeholder="Email">
+                        <input type="submit" value="Submit">
+                    </form>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quod aperiam
+                    recusandae reiciendis libero perspiciatis totam sapiente quos cum! Dolores 
+                    perferendis distinctio, culpa nostrum magnam necessitatibus earum suscipit maxime 
+                    saepe.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quod aperiam
+                        recusandae reiciendis libero perspiciatis totam sapiente quos cum! Dolores 
+                        perferendis distinctio, culpa nostrum magnam necessitatibus earum suscipit maxime 
+                        saepe.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quod aperiam
+                        recusandae reiciendis libero perspiciatis totam sapiente quos cum! Dolores 
+                        perferendis distinctio, culpa nostrum magnam necessitatibus earum suscipit maxime 
+                        saepe.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quod aperiam
+                        recusandae reiciendis libero perspiciatis totam sapiente quos cum! Dolores 
+                        perferendis distinctio, culpa nostrum magnam necessitatibus earum suscipit maxime 
+                        saepe. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat deserunt 
+                        nihil sequi voluptatem aliquam ducimus recusandae delectus repellendus, accusantium dolorem 
+                        sed, alias possimus dolores maxime adipisci earum repellat sunt veritatis?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quod aperiam
+                        recusandae reiciendis libero perspiciatis totam sapiente quos cum! Dolores 
+                        perferendis distinctio, culpa nostrum magnam necessitatibus earum suscipit maxime 
+                        saepe.</p>
+                    <h2>Audio</h2>
+                    <p>I've included an audio clip here</p>
+                    <audio controls>
+                        <source src="Audio/ukulele.mp3" type="audio/mpeg">
+                    </audio>
+                </aside>
+            </div>    
+            <footer>
+                <p>&copy; 2022 December</p>
+            </footer>
+        </div>
+    </body>
+</html>

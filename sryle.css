@@ -1,0 +1,273 @@
+html{
+    background-color: #869960;
+}
+body{
+    font-family: Tahoma, sans-serif;
+    font-size: 87%;
+    background: #869960 url(Images/luca-bravo-g130ZN38BZw-unsplash3.jpg) no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+
+}
+.container{
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+@media screen and (min-width: 1300px) {
+    body{
+        font-size: 95%;
+    }
+    
+    .container{
+        max-width: 1200px
+    }
+}
+@media screen and (max-width: 480px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+header{
+    padding-top: 20px;
+    color: #617140;
+}
+header h1{
+    margin: 0;
+    font-weight: normal;
+    font-size: 30px;
+}
+header p{
+    margin: 0;
+}
+/** navigation links**/
+.sideNav{
+    margin-top: 20px;
+}
+.sideNav ul{
+    margin: 0;
+    padding: 0;
+}
+.sideNav li{
+    list-style: none;
+    float: left;
+    margin-right: 5px;
+}
+.sideNav a{
+    display: block;
+    text-decoration: none;
+    color: #617140;
+    padding: 10px 20px;
+    border: 3px solid #e5e9dc;
+    border-bottom: none;
+}
+.sideNav a:hover{
+    background-color: #e5e9dc;
+}
+@media screen and (max-width: 767px) {
+    .sideNav li{
+        width: 33.332%;
+        margin-right: 0;
+    }
+    .sideNav a{
+        padding: 15px 0;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 480px) {
+    .sideNav li{
+        width: 50%;
+    }
+}
+/**reveal and hide the nav bar**/
+.toggle-btn{
+    display: none;
+}
+@media screen and (max-width: 767px) {
+    .toggle-btn-visible{
+        display: block;
+    }
+    .toggle-target-hidden{
+        display: none;
+    }
+    .toggle-target-expanded{
+        display: block;
+    }
+}
+
+/** end of nav**/
+.content-area{
+    border-top: 3px solid #e5e9dc;
+    border-bottom: 3px solid #e5e9dc;
+    padding-top: 40px;
+}
+@media screen and (max-width: 480px) {
+    .content-area{
+        padding-top: 20px;
+    }
+}
+.main-area{
+    width: 60%;
+    float: left;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+.side-bar{
+    width: 40%;
+    float: left;
+    background-color: #e5e9dc;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    font-size: 85%;
+}
+@media screen and (max-width: 700px){
+   .main-area,
+   .side-bar{
+    width: auto;
+    float: none;
+   } 
+   .main-area{
+    padding-right: 0;
+   }
+}
+/** slideshow styles**/
+.cycle-slideshow{
+    margin-bottom: 30px;
+}
+.slide{
+    width: 100%;
+    position: relative;
+}
+.slide img{
+    display: block;
+}
+.slide-text{
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(0, 0, 0, 0.7);
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 767px) {
+
+    .slide-text{
+        position: static;
+        bottom: 0;
+        background-color: #000;
+    }
+}
+
+.slide-text h3{
+    margin: 0;
+}
+/** previous and next buttons on the slideshow**/
+.cycle-prev, .cycle-next{
+    position: absolute;
+    top: 50%;
+    background-color: rgb(0, 0, 0, 0.35);
+    color: #fff;
+    padding: 1px 10px;
+    display: block;
+    cursor: pointer;
+    font-size: 130%;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.cycle-next{
+    right: 0;
+}
+.cycle-slideshow:hover .cycle-prev, .cycle-slideshow:hover .cycle-next{
+    opacity: 1;
+}
+.cycle-pager{
+    position: absolute;
+    top: 10%;
+    z-index: 1003;
+    width: 100%;
+    text-align: center;
+}
+.cycle-pager span{
+    text-indent: -9999px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 4px;
+    cursor: pointer;
+}
+.cycle-pager .cycle-pager-active{
+    background-color: #000;
+}
+/** form styling**/
+form {
+	background-color: #ECECEC;
+	padding: 30px 40px;
+    height: auto;
+    width: 50%;
+    border-radius: 10px;
+}
+form:hover {
+	background-color: #999;
+    box-shadow: 2px 5px 10px rgba(0,0,0,.5);
+}
+input [type="text"],input [type="email"],input [type="password"]{
+    width: 100%;
+	display: block;
+	box-sizing: border-box;
+	padding: 0 10px;
+	height: 40px;
+	margin-bottom: 15px;
+	border: 1px solid #CDCDCD;
+	outline: none;
+}
+.image-banner img{
+    display: block;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+/**banner **/
+.image-banner{
+    position: relative; /**absolute works well when it is related to relative**/
+}
+.banner-description{
+    position: absolute; /**absolute lets us position elements in left - right and top-bottom positions**/
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,.65);
+    padding: 15px 25px;
+}
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+.group {
+	zoom: 1;
+}
+footer{
+    text-align: center;
+    font-size: 85%;
+    color: #999;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
