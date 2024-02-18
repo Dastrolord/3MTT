@@ -1,0 +1,47 @@
+
+.parallax1 {
+    /* The image used */
+    background-image: url("Images/julius-drost-dS-q7-zkD9c-unsplash.jpg");
+
+    /* Set a specific height */
+    min-height: 1000px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax2 {
+    /* The image used */
+    background-image: url("Images/theregisti-HSXIp58yPyI-unsplash.jpg");
+
+    /* Set a specific height */
+    min-height: 1000px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax3 {
+    /* The image used */
+    background-image: url("Images/alex-azabache-riLA6oy6ekM-unsplash.jpg");
+
+    /* Set a specific height */
+    min-height: 1000px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text{
+    top: 30%;
+    left: 50%;
+    height: 250px;
+    background-color: red;
+    font-size: 36px;
+}
